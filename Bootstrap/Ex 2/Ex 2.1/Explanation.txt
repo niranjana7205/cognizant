@@ -1,0 +1,24 @@
+Explanation of Folders:
+
+css/:
+Contains all the compiled CSS files for Bootstrap components (buttons, forms, layout, typography, etc.).
+
+
+Files:
+bootstrap.min.css: Minified version (used in production).
+bootstrap.css: Non-minified (for debugging or learning).
+bootstrap.rtl.min.css: Right-to-left support (for languages like Arabic, Hebrew).
+
+
+js/:
+Contains the JavaScript code needed for interactive components like modals, carousels, dropdowns, etc.
+
+
+Files:
+
+bootstrap.bundle.min.js: Includes Bootstrap’s JS and required Popper.js (used for tooltips, dropdowns).
+bootstrap.bundle.js: Non-minified version.
+icons/ (optional, if downloaded separately):
+Contains SVG icons provided by Bootstrap (called Bootstrap Icons).
+Used for adding icons via <i> or <svg> tags.
+Download separately from: https://icons.getbootstrap.com/

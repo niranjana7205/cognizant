@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercise 2.2 - Bootstrap Collapse Plugin</title>
+  <!-- Link to locally stored Bootstrap CSS -->
+  <link rel="stylesheet" href="Ex1/Ex 1.2/bootstrap-5.3.6-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1 class="text-primary">Exercise 2.2: Using Bootstrap JavaScript Plugins</h1>
+    <p>Click the button below to toggle the visibility of the content using the <strong>collapse</strong> plugin.</p>
+
+    <!-- Button to trigger collapse -->
+    <button class="btn btn-success mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+      Toggle Content
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        This content is shown or hidden using Bootstrap’s JavaScript collapse plugin.
+      </div>
+    </div>
+  </div>
+
+  <!-- Include local Bootstrap JS bundle -->
+  <script src="Ex/Ex 1.2/bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
