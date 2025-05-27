@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Admin Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header, footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    h1, h2 {
+      background: linear-gradient(to right, #3498db, #9b59b6);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .eventCard {
+      border: 2px solid #ccc;
+      margin: 20px 0;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 8px;
+    }
+
+    .eventTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .eventTable th, .eventTable td {
+      border: 1px solid #bdc3c7;
+      padding: 12px;
+      background-color: #ecf0f1;
+    }
+
+    .eventTable th {
+      background-color: #34495e;
+      color: white;
+    }
+
+    .eventTable tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    a:link {
+      color: #3498db;
+    }
+
+    a:visited {
+      color: #9b59b6;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: #e74c3c;
+    }
+
+    ul.nav {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul.nav li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    form input:focus {
+      outline: 2px solid #3498db;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+
+    .none {
+      display: none;
+    }
+
+    .description {
+      text-align: justify;
+      text-transform: capitalize;
+      letter-spacing: 0.5px;
+      line-height: 1.5em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Event Admin Dashboard</h1>
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="eventCard">
+      <h2>Event Overview</h2>
+      <p class="description">manage all upcoming events in one place using the admin tools provided below.</p>
+    </section>
+
+    <section>
+      <h2>Admin Events Table</h2>
+      <table class="eventTable">
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Summer Music Fest</td>
+            <td>July 10</td>
+            <td>Central Park</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>Food Truck Rally</td>
+            <td>Aug 5</td>
+            <td>Downtown Plaza</td>
+            <td>Pending</td>
+          </tr>
+          <tr>
+            <td>Charity Marathon</td>
+            <td>Sep 20</td>
+            <td>Riverfront</td>
+            <td>Cancelled</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Event Feedback Form</h2>
+      <form>
+        <label for="name">Name:</label><br/>
+        <input type="text" id="name" name="name"><br/><br/>
+        <label for="email">Email:</label><br/>
+        <input type="email" id="email" name="email"><br/><br/>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <section>
+      <h2>Visibility vs Display</h2>
+      <p class="hidden">This is hidden with visibility: hidden</p>
+      <p class="none">This is hidden with display: none</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Event Admin Dashboard</p>
+  </footer>
+
+</body>
+</html>
